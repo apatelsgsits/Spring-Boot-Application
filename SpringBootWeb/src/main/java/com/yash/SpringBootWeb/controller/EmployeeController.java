@@ -21,6 +21,7 @@ public class EmployeeController {
         // write your code to save details
         modelMap.put("employeeName", employeeName);
         modelMap.put("employeeEmail", employeeEmail);
+        System.out.println("employeeName :"+ employeeName+"  .employeeEmail :"+employeeEmail);
         return "viewDetails";           // welcome is view name. It will call welcome.jsp
     }
 }
