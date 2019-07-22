@@ -17,7 +17,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yash.SpringBootWeb.model.City;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/restApi")
 public class WeatherRestAPIController {
 	
 	final String uri = "http://restapi.demoqa.com/utilities/weather/city/";
