@@ -38,6 +38,7 @@ public class WeatherRestAPIController {
 		RestTemplate restTemplate=new RestTemplate();
 		HttpHeaders headers=new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+		
 		HttpEntity<String> entity= new HttpEntity<String>("parameters", headers);
 		System.out.println("cityName :- "+cityName);
 		ResponseEntity<Object> responseEntity=restTemplate.exchange(uri+cityName,HttpMethod.GET,entity,Object.class);
